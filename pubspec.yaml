@@ -1,0 +1,233 @@
+name: lankaexplorer
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.9.0
+  firebase_auth: ^5.3.4
+  cloud_firestore: ^5.6.0
+  carousel_slider: ^5.0.0
+  intl: ^0.20.1
+  share_plus: ^10.1.3
+  provider: ^6.0.5
+  image_picker: ^1.1.2
+  shared_preferences: ^2.3.5
+  firebase_database: ^11.3.0
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+      - images/welcome.jpg
+      - images/logo.png
+      - images/signin.jpg
+      - images/signup.jpg
+      - images/ella.jpg
+      - images/nuwaraeliya.jpg
+      - images/galle.jpg
+      - images/sigiriya.jpg
+      - images/kandy.jpeg
+      - images/yala.jpg
+      - images/Adams_Peak_historical_sites.jpg
+      - images/arugambay_beach.jpg
+      - images/colombo_city_tour.jpg
+      - images/Dambulla_wiharaya_historical_sites.jpg
+      - images/ella_city_tours.jpg
+      - images/gal_wiharaya_historical_sites.jpg
+      - images/galle_city_tours.jpg
+      - images/horton_plains_nature_park.jpg
+      - images/Isurumuniya_Temple_historical_sites.jpg
+      - images/jayasirimaha_bodiya_historical_sites.jpg
+      - images/jungle_beach.jpg
+      - images/kaudulla_nature_park.jpg
+      - images/lunugamvehera_nature_park.jpg
+      - images/marbel_beach.jpg
+      - images/mirissa_beach.jpg
+      - images/mount_lavinia_beach.jpg
+      - images/sigiriya_historical_sites.jpg
+      - images/Temple_of_the_Tooth_historical_site.jpg
+      - images/udawalwa_nature_park.jpg
+      - images/unawatuna_beach.jpg
+      - images/yala_nature_park.jpg
+      - images/jungle_1.jpg
+      - images/jungle_2.jpg
+      - images/jungle_3.jpg
+      - images/jungle_4.jpg
+      - images/marbel_1.jpg
+      - images/marbel_2.jpg
+      - images/marbel_3.jpg
+      - images/marbel_4.jpg
+      - images/mirissa_1.jpg
+      - images/mirissa_2.jpg
+      - images/mirissa_3.jpg
+      - images/mirissa_4.jpg
+      - images/mirissa_5.jpg
+      - images/mount_1.jpg
+      - images/mount_2.jpg
+      - images/mount_3.jpg
+      - images/mount_4.jpg
+      - images/unawatuna_1.jpg
+      - images/unawatuna_2.jpg
+      - images/unawatuna_3.jpg
+      - images/unawatuna_4.jpg
+      - images/arugambe_1.jpg
+      - images/arugambay_2.jpg
+      - images/arugambay_3.jpg
+      - images/arugambay_4.jpg
+      - images/horton_1.jpg
+      - images/horton_2.jpg
+      - images/horton_3.jpg
+      - images/horton_4.jpg
+      - images/kaudulla_1.jpg
+      - images/kaudulla_2.jpg
+      - images/kaudulla_3.jpg
+      - images/kaudulla_4.jpg
+      - images/Lunugamvehera_1.jpg
+      - images/Lunugamvehera_2.jpg
+      - images/Lunugamvehera_3.jpg
+      - images/Lunugamvehera_4.jpg
+      - images/udawalawa_1.jpg
+      - images/udawalawa_2.jpg
+      - images/udawalawa_3.jpg
+      - images/udawalawa_4.jpg
+      - images/yala_1.jpg
+      - images/yala_2.jpg
+      - images/yala_3.jpg
+      - images/yala_4.jpg
+      - images/adam_1.jpg
+      - images/adam_2.jpg
+      - images/adam_3.jpg
+      - images/adam_4.jpg
+      - images/dambulla_1.jpg
+      - images/dambulla_2.jpg
+      - images/dambulla_3.jpg
+      - images/dambulla_4.jpg
+      - images/isurumuni_1.jpg
+      - images/isurumuni_2.jpg
+      - images/isurumuni_3.jpg
+      - images/isurumuni_4.jpg
+      - images/jayasri_1.jpg
+      - images/jayasri_2.jpg
+      - images/jayasri_3.jpg
+      - images/jayasri_4.jpg
+      - images/rock_1.jpg
+      - images/rock_2.jpg
+      - images/rock_3.jpg
+      - images/rock_4.jpg
+      - images/sigiriya_1.jpg
+      - images/sigiriya_2.jpg
+      - images/sigiriya_3.jpg
+      - images/sigiriya_4.jpg
+      - images/Tooth_1.jpg
+      - images/Tooth_2.jpg
+      - images/Tooth_3.jpg
+      - images/Tooth_4.jpg
+      - images/kandy_city.jpg
+      - images/anuradhapura_city_tour.jpg
+      - images/jaffna_city.jpg
+      - images/anuradapura_1.jpg
+      - images/anuradapura_2.jpg
+      - images/anuradapura_3.jpg
+      - images/anuradapura_4.jpg
+      - images/colombo_1.jpg
+      - images/colombo_2.jpg
+      - images/colombo_3.jpg
+      - images/colombo_4.jpg
+      - images/ella_1.jpg
+      - images/ella_2.jpg
+      - images/ella_3.jpg
+      - images/ella_4.jpg
+      - images/galle_1.jpg
+      - images/galle_2.jpg
+      - images/galle_3.jpg
+      - images/galle_4.jpg
+      - images/jaffna_1.jpg
+      - images/jaffna_2.jpg
+      - images/jaffna_3.jpg
+      - images/jaffna_4.jpg
+      - images/kandy_1.jpg
+      - images/kandy_2.jpg
+      - images/kandy_3.jpg
+      - images/kandy_4.jpg
+      - images/newyear.jpg
+      - images/kandyesala.jpg
+      - images/litterary.jpg
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
